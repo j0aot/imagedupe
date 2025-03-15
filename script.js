@@ -34,6 +34,10 @@ async function findDuplicates() {
 	const duplicates = [];
 
 	for (const file of files) {
+		if (!file.type.startsWith('image/')) {
+			continue; // Ignora arquivos que não são imagens
+		}
+
 		try {
 			const img = await loadImage(file);
 			const signature = calculateSignature(img);
