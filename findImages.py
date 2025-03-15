@@ -25,7 +25,7 @@ def find_duplicates(image_dir):
     return duplicates
 
 def main():
-    image_dir = "images"
+    image_dir = "./images"
     duplicates = find_duplicates(image_dir)
 
     if duplicates:
