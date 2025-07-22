@@ -1,2 +1,3 @@
-# imagedupe
+# image dupe
 
+identifica imagens duplicadas
